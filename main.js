@@ -1,25 +1,27 @@
 document.addEventListener('DOMContentLoaded', function(e) {
 
-  // function createTable(tableData)
-  // {
-  //   var table = document.createElement('table');
-  //   var tableBody = document.createElement('tbody');
-  //
-  //   tableData.forEach(function(rowData) {
-  //     var row = document.createElement('tr');
-  //
-  //     rowData.forEach(function(cellData) {
-  //       var cell = document.createElement('td');
-  //       cell.appendChild(document.createTextNode(cellData));
-  //       row.appendChild(cell);
-  //     });
-  //
-  //     tableBody.appendChild(row);
-  //   });
-  //
-  //   table.appendChild(tableBody);
-  //   document.body.appendChild(table);
-  // }
+let table = document.querySelector("tbody")
+
+for(let i in map1){
+  let tr = document.createElement("tr")
+  table.appendChild(tr)
+  for(let j in map1[i]) {
+    let td = document.createElement("td")
+    table.appendChild(td)
+    if(map1[i][j] === 1)
+    {
+      td.id= 'user'
+    }
+  }
+}
+
+
+function move(direction) {
+  //find location of current id=user
+  //move the id in that direction
+  //re-render
+
+}
 
 document.addEventListener('keydown', function(e){
   e.preventDefault()
