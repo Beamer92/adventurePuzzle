@@ -35,9 +35,6 @@ render(currlvl)
 console.log(currlvl[0][0])
 
 function move(direction) {
-  //find location of current id=user
-  //move the id in that direction
-  //re-render
   console.log(currlvl)
   const checkloc = (x,y,matrix) => {
     if(matrix[x] !== undefined) {
