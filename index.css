@@ -1,3 +1,20 @@
+nav span{
+  color: white;
+  font-weight: bolder;
+}
+
+nav.sidebar {
+  padding-top: 3em;
+}
+
+.list1 {
+  font-weight: bold;
+}
+
+.list1 ul{
+  font-weight:normal;
+}
+
 .gamearea td{
   border: 1px solid black;
   width: 40px;

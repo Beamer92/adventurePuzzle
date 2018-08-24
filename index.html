@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="main.css">
-<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="index.css">
+<script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="maps.js"></script>
   <head>
     <meta charset="utf-8">
     <title>Adventure Puzzle!</title>
   </head>
   <body>
-      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow"> NAV HERE
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md">
+        <span>Adventure Puzzle!</span>
+        <a href="https://github.com/Beamer92/adventurePuzzle" id="GitHub"><img src="http://i.imgur.com/OCHWcon.png" style="width:25px; height:25px;"></a>
       </nav>
       <div class="container-fluid">
         <div class="row">
           <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="side-bar sticky">
-              <div class="nav flex-column"> FLEX COLUMN
+              <div class="nav flex-column list1"> Your Stats
+                <ul>
+                  <li>Level: </li>
+                  <li>Moves: </li>
+                  <li>Resets: </li>
+                  <li>Score: </li>
+                  <li>Total Score: </li>
+                </ul>
             </div>
           </div>
         </nav>
         <main class="col-md">
           <table class="gamearea">
         <tbody>
-        
+
         </tbody>
         </table>
       </main>
