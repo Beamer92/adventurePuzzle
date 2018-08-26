@@ -96,8 +96,6 @@ function move(direction) {
 document.addEventListener('keydown', function(e){
   e.preventDefault()
 
-  //console.log(e.key)
-  //ArrowUp, ArrowDown, ArrowRight, ArrowLeft
   move(e.key)
 
 })
