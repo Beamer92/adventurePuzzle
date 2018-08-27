@@ -15,6 +15,14 @@ nav.sidebar {
   font-weight:normal;
 }
 
+.lists1 li {
+  max-width: 30px;
+}
+
+.list1 li div{
+  max-width: 1em;
+}
+
 .gamearea td{
   border: 1px solid black;
   width: 40px;
@@ -36,7 +44,7 @@ tbody {
   background-color: black;
   width: 30px;
   height: 30px;
-  margin: 5px;
+  margin: 3px;
 }
 
 .wall {
