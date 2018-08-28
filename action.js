@@ -19,7 +19,9 @@ function solve(level, stp) {
       }
       else if (stp === 2)
       {
-        document.getElementById('0').getElementsByClassName('11')[0].classList.remove('wall')
+        let end = document.getElementById('0').getElementsByClassName('11')[0]
+        end.classList.remove('wall')
+        end.classList.add('exit')
         document.getElementById('1').getElementsByClassName('11')[0].style.backgroundColor = "red"
       }
     break;

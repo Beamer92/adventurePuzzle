@@ -50,3 +50,7 @@ tbody {
 .wall {
   background-color: blue;
 }
+
+.exit {
+  background-color: green;
+}
