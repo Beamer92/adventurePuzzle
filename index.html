@@ -12,21 +12,35 @@
   <body>
       <nav class="navbar navbar-dark fixed-top bg-dark flex-md">
         <span>Adventure Puzzle!</span>
-        <a href="https://github.com/Beamer92/adventurePuzzle" id="GitHub"><img src="http://i.imgur.com/OCHWcon.png" style="width:25px; height:25px;"></a>
+        <h2>Welcome Hero!</h2>
+        <a href="https://github.com/Beamer92/adventurePuzzle" id="GitHub"><img src="http://www.codex33.com/assets/media/octocat.png" style="width:35px; height:35px;"></a>
       </nav>
       <div class="container-fluid">
         <div class="row">
-          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <nav class="col-md-2 d-none d-md-block sidebar">
             <div class="side-bar sticky">
               <div class="nav flex-column list1"> Your Stats
                 <ul>
                   <li id='level'>Level: 0</li>
                   <li id="moves">Moves: 0</li>
-                  <li>Resets: </li>
-                  <li id='score'>Score: </li>
+                  <li id="reset">Resets: 0</li>
                   <li id='totScore'>Total Score: </li>
                 </ul>
             </div>
+            <br>
+            <h6>How To Play:</h6>
+            <p>Use the Arrow Keys or <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd>
+               to move your Hero throughout the Dungeon! <br><br>
+               Search for secret toggles to discover the Exit <br><br>
+               Use <kbd>Spacebar</kbd> to search nearby!
+            </p>
+            <br>
+            <form>
+              <input type="button" id="resetbtn" value="Reset Level">
+              <br><br>
+              <input type="button" id="startover" value="Restart Game">
+            </form>
+            <br>
           </div>
         </nav>
         <main class="col-md">

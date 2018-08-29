@@ -26,5 +26,38 @@ function solve(level, stp) {
       }
     break;
 
+    case 1:
+       if(stp === 0)
+       {
+         document.getElementById('10').getElementsByClassName('4')[0].classList.remove('wall')
+         document.getElementById('10').getElementsByClassName('1')[0].style.backgroundColor = "red"
+         step++
+       }
+       else if(stp === 1)
+       {
+         document.getElementById('3').getElementsByClassName('2')[0].style.backgroundColor = "red"
+         document.getElementById('5').getElementsByClassName('5')[0].classList.remove('wall')
+         step++
+       }
+       else if (stp === 2)
+       {
+         document.getElementById('1').getElementsByClassName('5')[0].style.backgroundColor = "red"
+         document.getElementById('1').getElementsByClassName('6')[0].classList.remove('wall')
+         step++
+       }
+       else if(stp === 3)
+       {
+         document.getElementById('4').getElementsByClassName('9')[0].style.backgroundColor = "red"
+         document.getElementById('5').getElementsByClassName('9')[0].classList.remove('wall')
+         step++
+       }
+       else if(stp === 4)
+       {
+         let end = document.getElementById('6').getElementsByClassName('16')[0]
+         end.classList.remove('wall')
+         end.classList.add('exit')
+         document.getElementById('4').getElementsByClassName('13')[0].style.backgroundColor = "red"
+       }
+    break;
   }
 }
