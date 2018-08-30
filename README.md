@@ -14,7 +14,7 @@
 >
 >_Good Luck Hero!_
 
-<img src="adventurePuzzle/imgCap.PNG"
+<img src="https://github.com/Beamer92/adventurePuzzle/blob/master/imgCap.PNG?raw=true"
      alt="Dungeon Pic"
      style="float: left; margin-right: 10px;" />
 
