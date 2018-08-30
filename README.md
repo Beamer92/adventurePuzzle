@@ -4,17 +4,17 @@
 >_Welcome Hero! You have found yourself at the entrance of a set of underground mazes_
 >_Why you've chosen to go down there is a complete mystery_
 >
->_There is no Princess that requires saving_
->_There is no dragon at the end_
->_There are no treasure chests_
->_There are no monsters_
->_There's really no reason for you to be here_
+>_There is no Princess that requires saving,_
+>_there is no dragon at the end,_
+>_there are no treasure chests,_
+>_there are no monsters,_
+>_there's really no reason for you to be here_
 >
 >_But here you are! Find the hidden switches to advance in each level, then go onto the next room_
 >
 >_Good Luck Hero!_
 
-<img src="imgCap.png"
+<img src="/imgCap.png"
      alt="Dungeon Pic"
      style="float: left; margin-right: 10px;" />
 
