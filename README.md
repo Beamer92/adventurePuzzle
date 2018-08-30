@@ -1,7 +1,7 @@
 ## Dungeon Solver!
-#Galvanize Q1 Project - Adventure-themed Puzzle Game
+# Galvanize Q1 Project - Adventure-themed Puzzle Game
 
-*Welcome Hero! You have found yourself at the entrance of a set of underground mazes
+_Welcome Hero! You have found yourself at the entrance of a set of underground mazes
 Why you've chosen to go down there is a complete mystery
 
 There is no Princess that requires saving
@@ -12,7 +12,7 @@ There's really no reason for you to be here
 
 But here you are! Find the hidden switches to advance in each level, then go onto the next room
 
-Good Luck Hero!*
+Good Luck Hero!_
 
 
 Move around the levels by using the **Arrow Keys** or **WASD**
