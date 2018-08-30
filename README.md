@@ -14,9 +14,9 @@
 >
 >_Good Luck Hero!_
 
-
-![Dungeon Pic](/imgCap.png)
-
+<img src="imgCap.png"
+     alt="Dungeon Pic"
+     style="float: left; margin-right: 10px;" />
 
 Move around the levels by using the **Arrow Keys** or **WASD**
 To move further in each level you must find the hidden switch to open/close hidden passageways
