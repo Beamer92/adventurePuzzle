@@ -4,7 +4,7 @@
 >_Welcome Hero! You have found yourself at the entrance to a set of underground mazes._
 >_Why you've chosen to go down there is a complete mystery_
 >
->_There is no Princess that requires saving, there is no dragon at the end, there are no treasure chests,there are no monsters._
+>_There is no Princess that requires saving, there is no dragon at the end, there are no treasure chests, there are no monsters._
 >_There's really no reason for you to be here_
 >
 >_But here you are! Find the hidden switches to advance in each level, then go onto the next room_
