@@ -14,7 +14,7 @@
 >
 >_Good Luck Hero!_
 
-<img src="/imgCap.png"
+<img src="adventurePuzzle/imgCap.PNG"
      alt="Dungeon Pic"
      style="float: left; margin-right: 10px;" />
 
