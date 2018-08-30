@@ -14,7 +14,8 @@
 >
 >_Good Luck Hero!_
 
-![Dungeon Pic](imgCap.png)
+
+![Dungeon Pic](/imgCap.png)
 
 
 Move around the levels by using the **Arrow Keys** or **WASD**
