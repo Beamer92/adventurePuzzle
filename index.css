@@ -65,3 +65,7 @@ tbody {
 .exit {
   background-color: green;
 }
+
+.toggled {
+	background-color: red;
+}

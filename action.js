@@ -8,13 +8,14 @@ function solve(level, stp) {
       {
         document.getElementById('8').getElementsByClassName('10')[0].classList.remove('wall')
         document.getElementById('3').getElementsByClassName('10')[0].classList.remove('wall')
-        document.getElementById('6').getElementsByClassName('18')[0].style.backgroundColor = "red"
+        //document.getElementById('6').getElementsByClassName('18')[0].style.backgroundColor = "red"
+		document.getElementById('6').getElementsByClassName('18')[0].classList.add('toggled')
         step++
       }
       else if (stp === 1)
       {
         document.getElementById('1').getElementsByClassName('12')[0].classList.remove('wall')
-        document.getElementById('6').getElementsByClassName('3')[0].style.backgroundColor = "red"
+        document.getElementById('6').getElementsByClassName('3')[0].classList.add('toggled')
         step++
       }
       else if (stp === 2)
@@ -22,7 +23,7 @@ function solve(level, stp) {
         let end = document.getElementById('0').getElementsByClassName('11')[0]
         end.classList.remove('wall')
         end.classList.add('exit')
-        document.getElementById('1').getElementsByClassName('11')[0].style.backgroundColor = "red"
+        document.getElementById('1').getElementsByClassName('11')[0].classList.add('toggled')
       }
     break;
 
@@ -30,24 +31,24 @@ function solve(level, stp) {
        if(stp === 0)
        {
          document.getElementById('10').getElementsByClassName('4')[0].classList.remove('wall')
-         document.getElementById('10').getElementsByClassName('1')[0].style.backgroundColor = "red"
+         document.getElementById('10').getElementsByClassName('1')[0].classList.add('toggled')
          step++
        }
        else if(stp === 1)
        {
-         document.getElementById('3').getElementsByClassName('2')[0].style.backgroundColor = "red"
+         document.getElementById('3').getElementsByClassName('2')[0].classList.add('toggled')
          document.getElementById('5').getElementsByClassName('5')[0].classList.remove('wall')
          step++
        }
        else if (stp === 2)
        {
-         document.getElementById('1').getElementsByClassName('5')[0].style.backgroundColor = "red"
+         document.getElementById('1').getElementsByClassName('5')[0].classList.add('toggled')
          document.getElementById('1').getElementsByClassName('6')[0].classList.remove('wall')
          step++
        }
        else if(stp === 3)
        {
-         document.getElementById('4').getElementsByClassName('9')[0].style.backgroundColor = "red"
+         document.getElementById('4').getElementsByClassName('9')[0].classList.add('toggled')
          document.getElementById('5').getElementsByClassName('9')[0].classList.remove('wall')
          step++
        }
@@ -56,7 +57,7 @@ function solve(level, stp) {
          let end = document.getElementById('6').getElementsByClassName('16')[0]
          end.classList.remove('wall')
          end.classList.add('exit')
-         document.getElementById('4').getElementsByClassName('13')[0].style.backgroundColor = "red"
+         document.getElementById('4').getElementsByClassName('13')[0].classList.add('toggled')
        }
     break;
   }

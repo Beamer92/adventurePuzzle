@@ -148,7 +148,7 @@ function move(direction) {
     }
     break;
     case " ":
-     if(maps[level][position[0]][position[1]] === 8)
+     if(maps[level][position[0]][position[1]] === 8 && document.getElementById(position[0]).getElementsByClassName(position[1])[0].classList.contains('toggled') === false)
      {
        solve(level, step)
      }
