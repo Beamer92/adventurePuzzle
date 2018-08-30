@@ -1,14 +1,11 @@
 # Dungeon Solver!
 ## Galvanize Q1 Project - Adventure-themed Puzzle Game
 
->_Welcome Hero! You have found yourself at the entrance of a set of underground mazes_
+>_Welcome Hero! You have found yourself at the entrance to a set of underground mazes._
 >_Why you've chosen to go down there is a complete mystery_
 >
->_There is no Princess that requires saving,_
->_there is no dragon at the end,_
->_there are no treasure chests,_
->_there are no monsters,_
->_there's really no reason for you to be here_
+>_There is no Princess that requires saving, there is no dragon at the end, there are no treasure chests,there are no monsters._
+>_There's really no reason for you to be here_
 >
 >_But here you are! Find the hidden switches to advance in each level, then go onto the next room_
 >
