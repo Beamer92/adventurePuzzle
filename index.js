@@ -2,7 +2,7 @@ var step = 0
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
-let table = document.querySelector("tbody")
+let tbod = document.querySelector("tbody")
 let position = []
 let movecount = 0
 let level = 0
@@ -23,7 +23,9 @@ else {
 }
 
 let scoreCalc = { "0": {"perfect": 86, "close": 95},
-                  "1": {"perfect": 62, "close": 80}}
+                  "1": {"perfect": 62, "close": 80},
+                  "2": {"perfect": 250, "close": 300},
+                  "3": {"perfect": 250, "close": 300}}
 
 
 function render(map){
@@ -33,15 +35,15 @@ function render(map){
   movecount = 0
   document.getElementById("moves").innerText = `Moves: 0`
 
-  //clear table body
-  while (table.firstChild) {
-    table.firstChild.remove();
+  //clear tbod body
+  while (tbod.firstChild) {
+    tbod.firstChild.remove();
   }
 
   for(let i in map){
     let tr = document.createElement("tr")
     tr.id = i
-    table.appendChild(tr)
+    tbod.appendChild(tr)
     for(let j in map[i]) {
       let td = document.createElement("td")
       td.className = j
@@ -57,6 +59,10 @@ function render(map){
       else if(map[i][j] === 1)
       {
         td.classList.add("wall")
+      }
+      else if(map[i][j] === 7)
+      {
+        td.classList.add("exit")
       }
     }
   }
@@ -150,7 +156,7 @@ function move(direction) {
     case " ":
      if(maps[level][position[0]][position[1]] === 8 && document.getElementById(position[0]).getElementsByClassName(position[1])[0].classList.contains('toggled') === false)
      {
-       solve(level, step)
+       solve(level, step, position)
      }
     break;
 
@@ -198,7 +204,14 @@ function goToNextLevel(){
   level++
   localStorage.setItem('level', level)
   localStorage.setItem('totScore', totScore)
-  render(maps[level])
+  if(level <= 2)
+  {
+    render(maps[level])
+  }
+  else
+  {
+    endgame()
+  }
 }
 
 //using mousedown because Spacebar was activating "click" event
@@ -218,7 +231,45 @@ document.getElementById("startover").addEventListener('mousedown', function(e){
   level = 0
   resets = 0
   document.getElementById("reset").innerText = `Resets: ${resets}`
+
+  if(document.getElementById('worldEnder') !== null)
+  {
+    let we = document.getElementById('worldEnder')
+    we.parentNode.removeChild(we)
+  }
+
   render(maps[level])
 })
+
+  function endgame() {
+    document.getElementById("totScore").innerText = `Total Score: ${totScore}`
+    step = 0
+    movecount = 0
+    document.getElementById("moves").innerText = `Moves: 0`
+    localStorage.setItem('totScore', 0)
+    localStorage.setItem('level', 0)
+    //clear tbod body
+    while (tbod.firstChild) {
+      tbod.firstChild.remove();
+    }
+
+    let main = document.querySelector("main")
+    let enddiv = document.createElement("div")
+    enddiv.id = "worldEnder"
+    main.appendChild(enddiv)
+
+    let d1 = document.createElement("span")
+    let d2 = document.createElement("span")
+    let d3 = document.createElement("span")
+    let d4 = document.createElement("span")
+    d1.innerHTML = "Congratulations Hero! You've made it to the end" + "<br />"
+    d2.innerHTML = "Hopefully you can remember the way out..."  + "<br />" + "<br />"
+    d3.innerHTML = "Good Luck Hero!" + "<br />" + "<br />"
+    d4.innerHTML = `Final Score: ${totScore}`
+    enddiv.appendChild(d1)
+    enddiv.appendChild(d2)
+    enddiv.appendChild(d3)
+    enddiv.appendChild(d4)
+  }
 
 })
