@@ -22,12 +22,6 @@ else {
   totScore = parseInt(localStorage.getItem('totScore'))
 }
 
-let scoreCalc = { "0": {"perfect": 86, "close": 95},
-                  "1": {"perfect": 62, "close": 80},
-                  "2": {"perfect": 250, "close": 300},
-                  "3": {"perfect": 250, "close": 300}}
-
-
 function render(map){
   document.getElementById("level").innerText = `Level: ${level + 1}`
   document.getElementById("totScore").innerText = `Total Score: ${totScore}`
@@ -172,13 +166,17 @@ document.addEventListener('keydown', function(e){
 })
 
 function lvlscore(lvl) {
-  let scores = scoreCalc[lvl.toString()]
+
+  let scoreCalc = { "0": {"perfect": 86, "close": 95},
+                    "1": {"perfect": 62, "close": 80},
+                    "2": {"perfect": 250, " close": 300},
+                    "3": {"perfect": 250, "close": 300}}
   let total = 0
 
-  if(moves === scores["perfect"]){
+  if(movecount === scoreCalc[lvl]["perfect"]){
     total = 100
   }
-  else if (moves >= scores["perfect"] && moves <= scores["close"]){
+  else if (movecount >= scoreCalc[lvl]["perfect"] && movecount <= scoreCalc[lvl]["close"]){
     total = 90
   }
   else {
