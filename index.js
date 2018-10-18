@@ -250,8 +250,8 @@ document.getElementById("startover").addEventListener('mousedown', function(e){
     localStorage.setItem('totScore', 0)
     localStorage.setItem('level', 0)
     //clear tbod body
-    while (tbod.firstChild) {
-      tbod.firstChild.remove();
+    while (table.firstChild) {
+      table.firstChild.remove();
     }
 
     let main = document.querySelector("main")
