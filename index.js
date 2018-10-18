@@ -2,7 +2,7 @@ var step = 0
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
-let tbod = document.querySelector("tbody")
+let table = document.querySelector("table")
 let position = []
 let movecount = 0
 let level = 0
@@ -28,11 +28,12 @@ function render(map){
   step = 0
   movecount = 0
   document.getElementById("moves").innerText = `Moves: 0`
-
   //clear tbod body
-  while (tbod.firstChild) {
-    tbod.firstChild.remove();
+  while (table.firstChild) {
+    table.firstChild.remove();
   }
+
+  let tbod = document.createElement("tbody")
 
   for(let i in map){
     let tr = document.createElement("tr")
@@ -60,6 +61,8 @@ function render(map){
       }
     }
   }
+
+  table.appendChild(tbod)
 }
 
 render(maps[level])
@@ -247,8 +250,8 @@ document.getElementById("startover").addEventListener('mousedown', function(e){
     localStorage.setItem('totScore', 0)
     localStorage.setItem('level', 0)
     //clear tbod body
-    while (tbod.firstChild) {
-      tbod.firstChild.remove();
+    while (table.firstChild) {
+      table.firstChild.remove();
     }
 
     let main = document.querySelector("main")
