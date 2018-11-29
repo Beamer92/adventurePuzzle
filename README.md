@@ -1,4 +1,4 @@
-# Dungeon Solver!
+# Adventure Puzzle!
 ## Galvanize Q1 Project - Adventure-themed Puzzle Game
 
 >_Welcome Hero! You have found yourself at the entrance to a set of underground mazes._
